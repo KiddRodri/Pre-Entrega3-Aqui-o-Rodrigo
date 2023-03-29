@@ -1,0 +1,12 @@
+body{
+  background: yellow;
+}
+
+h1{
+  font-size: 4rem;
+  text-align: center;
+  width: 70%;
+  border-bottom: 5px solid #000;
+  margin: 0 auto;
+  margin-top: 40px;
+}
