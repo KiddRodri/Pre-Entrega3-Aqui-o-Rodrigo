@@ -1,6 +1,10 @@
 /*CREANDO UN SIMULADOR DE NOTAS*/
 
-let cantNotas = prompt('Ingrese cuantas notas desea registrar')
+
+/*En este problema me piden que ingrese notas de acuerdo al profesor desea ingresar y sacar el promedio 
+luego de eso mostra en que condiciones esta el alumno para que los maestros se puedan esforzar mas enseñando*/
+
+let cantNotas = prompt('Ingrese cuantas notas desea registrar');
 let i = 1;
 let suma = 0;
 let prom = 0;
