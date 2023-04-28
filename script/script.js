@@ -16,7 +16,7 @@ function cargarEventos(){
     //DE ESTA MANERA LOS TWEETS SE MANTENDRAN ASI LA PAGINA RECARGUE 
     document.addEventListener('DOMContentLoaded',()=>{
         allTweet = JSON.parse(localStorage.getItem('tweets'))||[];
-        agregarHTML();
+        agregarHTML(allTweet);
     });
 };
 
@@ -43,7 +43,7 @@ function showTweet(e){
 
     allTweet = [...allTweet,objTweet];
 
-    agregarHTML();
+    agregarHTML(allTweet);
     //QUIERO QUE AL IR INGRESANDO UN TWEET SE RECARGUE LA PAGINA
     formulario.reset();
 };
@@ -59,7 +59,7 @@ function alertError(msj){
 };
 
 //AQUI MOSTRAREMOS EL HTML EN EL HTML
-function agregarHTML(){
+function agregarHTML(allTweet){
     
     //SI NO LIMPIO EL HTML SE REPETIRAN LOS TWEETS
     limpiarHTML();
@@ -98,7 +98,7 @@ function borrarTweet(id){
     //PARA ELIMINAR USARE EL METODO FILTER
     allTweet = allTweet.filter( borrar => borrar.id !== id );
 
-    agregarHTML();
+    agregarHTML(allTweet);
 }
 
 //LIMPIAMOS
