@@ -15,7 +15,7 @@ function cargarEventos(){
     
     //DE ESTA MANERA LOS TWEETS SE MANTENDRAN ASI LA PAGINA RECARGUE 
     document.addEventListener('DOMContentLoaded',()=>{
-        allTweet = JSON.parse(localStorage.getItem('tweets'));
+        allTweet = JSON.parse(localStorage.getItem('tweets'))||[];
         agregarHTML();
     });
 };
